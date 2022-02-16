@@ -1,38 +1,78 @@
-.App {
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body{
+  background-color: azure;
+}
+
+form {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type=submit]{
+  background:blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color:#fff;
+  border: none;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type=submit]:hover {
+  background: navy;
+  color: yellow;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type=text]{
+  height: 35px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
 }
 
-.App-link {
-  color: #61dafb;
+form h2{
+  margin: 10px 0px;
+  padding : 10px 0px;
+  background: #333;
+  color: azure;
+  border-radius: 5px;
+}
+.displayBookmark{
+  position: relative;
+  top: 150px;
+  left:33%;
+  border: 1px grey;
+  background: azure;
+  width: 33%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.displayBookmark img{
+  width: 30%;
+}
+.displayBookmark span{
+    position: relative;
+    text-decoration: none;
+}
+.crossButton{
+  float:right;
+}
+.bookmarkStyle{
+ border: 1px solid azure;
+ border-radius:5px;
+ display: block;
+ margin-top: 20px;
+ background: #fff;
+ box-shadow: 2px 4px 4px 2px #c7c7c7;
+ text-decoration: none;
 }
